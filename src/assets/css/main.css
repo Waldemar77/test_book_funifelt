@@ -1,0 +1,519 @@
+/* 
+    Base
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #2c3e50;
+
+    /* Center the App Container*/
+    /*display: flex;
+    justify-content: unset;
+    align-items: center;
+    */
+}
+
+img { max-width: 100%; }
+
+#app {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    padding: 10px 14px;
+}
+
+.btn-purple {
+    background-color: #7c72f1;
+    color: white;
+    border: 0;
+}
+
+.btn-blue {
+    background-color: #26d4ff;
+    color: white;
+    border: 0;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.btn-blue:hover {
+    background-color: #0cb6e0;
+}
+
+.btn-close {
+    background: transparent;
+    border: 0;
+    margin-top: 10px;
+    width: 50px;
+    margin-left: 30px;
+}
+
+button, 
+.pointer {
+    cursor: pointer;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+/*Texts*/
+.blue-title {
+    color: #017cff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.purple-title {
+    color: #7c72f1;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+pre {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    white-space: pre-line;
+    padding: 16px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+/*
+    Region Pages
+*/
+
+.regions-container {
+    padding: 20px;
+}
+
+.regions-top h3,
+.regions-bottom h3{
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+}
+
+.regions-top .logo-funifelt {
+    width: 118px;
+    margin: 15px auto 0;
+    display: block;
+}
+
+.white-container {
+    background-color: white;
+    padding: 26px 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.help-text {
+    font-style: italic;
+    font-weight: lighter;
+    color: #7c72f1;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+/*
+Tabs
+*/
+.tabs-buttons {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.tabs-buttons button{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: #7c72f1;
+    color: white;
+    border: 3px solid #5f67fe;
+    border-radius: 12px;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    margin: 6px;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.tabs-buttons button:hover{
+    background: #5f67fe;
+}
+
+.tabs-buttons button.visited  {
+    /*background-image: url(../img/regions/check.png);*/
+    background-size: 140% 140%;
+    background-position: 50% 40%;
+    font-size: 0;
+}
+
+.txt-center  {
+    margin-top: 20px;
+}
+
+.txt-center .tabs-content {
+    display: inline-block;
+}
+
+.txt-center .help-text {
+    display: block;
+    margin: 0;
+}
+
+/*
+    Activity
+*/
+.container-blue{
+    background-color: #adcdf6;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-blue:before {
+    content: "";
+    /*background-image: url("../img/common/question.png");*/
+    position: absolute;
+    background-size: contain;
+    width: 77px;
+    height: 120px;
+    background-repeat: no-repeat;
+    top: -35px;
+    right: -26px;
+}
+
+.container-blue ul{
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+}
+
+/*
+    Custom radio
+*/
+
+.custom-radio-container label{
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.custom-radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 2px solid rgb(177, 177, 177);
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio-container:hover input ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.custom-radio-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio-container .checkmark:after {
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 50%;
+    background: #01dcee;
+}
+
+/*
+    Custom Checkbox
+*/
+
+.custom-check-container label{
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.custom-check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-check-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid rgb(177, 177, 177);
+}
+
+/* On mouse-over, add a grey background color */
+.custom-check-container:hover input ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.custom-check-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-check-container .checkmark:after {
+    content: "";
+    content: "";
+    top: 5px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    /*background-image: url("../img/regions/check-question.png");*/
+    background-size: contain;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 600px) {
+    html, body {
+        height: 100%;
+    }
+
+    #app {
+        width: 100%;
+        height: calc(100vh - 1px);
+    }
+
+    #home, 
+    .regions-container {
+        text-align: left;    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 30px 10px;
+    }
+
+    .white-container {
+        min-height: calc(100% - 160px);
+        padding: 30px;
+        margin-top: 10px;
+        overflow: auto;
+      }
+
+    .blue-title {
+        font-size: 2.4vw;
+    }
+
+    .btn-purple--hover:hover {
+        opacity: .7;
+    }    
+
+    /*
+        Region Pages
+    */
+    .regions-top .logo-funifelt {
+        margin: 0;
+        width: 100%;
+    }
+
+    .regions-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .regions-top .logo-funifelt {
+        max-width: 140px;
+    }
+
+    .regions-top h3 {
+        font-size: 1.4vw;
+        margin-top: 15px;    
+    }
+
+    .regions-bottom {
+        width: 100%;
+    }
+
+    .regions-bottom h3 {
+        font-size: 16px;
+    }
+
+    .help-text { 
+        font-size: 1.1vw;
+        margin: 14px auto;
+    }
+
+
+    .d-flex {
+        display: flex;
+    }
+
+    pre {
+        padding: 0px;
+        font-size: 1.4vw;
+    }
+
+    /*Common Layouts*/
+    .layout-images-vertical .straight-image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .layout-images-vertical .straight-image:nth-last-of-type(1):before,
+    .layout-images-vertical .straight-image:nth-last-of-type(1):after{
+        display: none;
+    }
+
+    /*
+        Activity
+    */
+    .container-blue {
+        width: 70%;
+        margin: 40px auto 80px;
+        padding: 40px 20px 30px;
+    }
+
+    .custom-radio-container label{
+        padding-left: 60px;
+    }
+
+    .btn-send {
+        position: absolute;
+        right: 30px;
+        bottom: 10px;
+        z-index: 3;
+    }
+}
+
+
+
+/*Desktop Large*/
+@media only screen and (min-width: 1300px) {
+    body{
+        height: 100%;
+    }
+    #app {
+        height: 100%;
+    }
+    pre {
+        font-size: 20px;
+    }
+
+    .regions-top, 
+    .white-container,
+    .regions-bottom {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .white-container {
+        max-height: 800px;
+        padding-left: 40px;
+        padding-right: 40px;
+        flex: 1;
+    }
+
+    .blue-title {
+        font-size: 34px;
+    }
+
+    .help-text {
+        font-size: 17px;
+    }
+}
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+ 
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+ 
+video::-webkit-media-controls-panel {
+    width: calc(100% + 25px);
+}
