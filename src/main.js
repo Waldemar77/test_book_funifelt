@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import Login from "@/assets/pages/login"
+import Home from "@/assets/pages/home"
 import firebase from 'firebase';
 
 import { createRouter, createWebHashHistory } from 'vue-router'
@@ -8,7 +9,7 @@ import DragDropTouch from './assets/js/DragDropTouch'
 
 const routes = [
     { path: '/', name: 'Login_app', component: Login },
-    /*{ path: '/home', name: 'home', component: Home, meta: { requireAuth: true } },*/
+    { path: '/home', name: 'Home_app', component: Home, meta: { requireAuth: true } },
     /*{ path: '/regions', name: 'regions', component: Regions, meta: { requireAuth: true } },*/
     /*{ path: '/region/:regionId', name: "region", component: Region, props: true, meta: { requireAuth: true } }*/
 ];

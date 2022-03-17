@@ -63,7 +63,7 @@ export default {
           .then((user) => {
             console.log(user);
             // If user exists, the home page can be showed.
-            this.$router.push({ name: "home" });
+            this.$router.push({ name: "Home_app" });
           })
           .catch((err) => {
             // We must show the error message when the user doesn't exist or the password doesn't correct.
@@ -204,6 +204,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: fixed;
 }
 
 .login {
