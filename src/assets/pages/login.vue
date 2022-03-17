@@ -35,11 +35,11 @@
 </template>
 
 <script>
-import db from "@/firebase/init";
+import db from "@/assets/firebase/init";
 //import firebase from "firebase";
 
 export default {
-  name: "Login",
+  name: "Login_app",
 
   // Setting the variable to use for each text box and error message.
   data() {
