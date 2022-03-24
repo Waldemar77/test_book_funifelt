@@ -2,7 +2,10 @@
   <body>
     <div id="container-pg3">
       <router-link to="/lesson1">
-        <button type="button" id="btn-continue" class="btn btn-purple">NEXT</button>
+        <button type="button" id="btn-continue" class="btn btn-purple"></button>
+      </router-link>
+      <router-link to="/credits">
+        <button type="button" id="btn-return"></button>
       </router-link>
     </div>
   </body>
