@@ -1,8 +1,11 @@
 <template>
   <body>
-    <div id="container-pg6">
+    <div id="container-pg6" class="container">
       <router-link to="/lesson1_3">
-        <button type="button" id="btn-continue" class="btn btn-purple">NEXT</button>
+        <button type="button" class="btn-continue"></button>
+      </router-link>
+      <router-link to="/lesson1_1">
+        <button type="button" class="btn-return"></button>
       </router-link>
     </div>
   </body>
@@ -18,22 +21,11 @@ export default {
 #container-pg6 {
   height: 100vh;
   background-image: url("../../assets/img/bg_pages/06_Tomo 1 - JPEG.png");
-  background-color: #6fcfeb;
+  background-color: #1a428a;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
 }
 
-#container-pg6 #btn-continue {
-  float: right;
-  padding: 15px;
-  border-radius: 30%;
-  border: 7px solid #6fcfeb;
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
 </style>
