@@ -17,10 +17,10 @@ export default {
 
 <style scoped>
 .container {
-  background-image: url("../../assets/img/bg_pages/01_Tomo 1 - JPEG2.png");
+  background-image: url("../../assets/img/bg_pages/01_Tomo 1 - JPEG.png");
   height: 100vh;
   background-size: contain;
-  background-color: #1a428a;
+  /*background-color: #1a428a;*/
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;

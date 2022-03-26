@@ -21,7 +21,7 @@ export default {
 #container-pg4 {
   height: 100vh;
   background-image: url("../../assets/img/bg_pages/04_Tomo 1 - JPEG4.png");
-  background-color: #1a428a;
+  /*background-color: #1a428a;*/
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;

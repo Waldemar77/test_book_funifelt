@@ -13,6 +13,8 @@ body {
     font-weight: normal;
     font-size: 18px;
     color: #2c3e50;
+    background-image: url("../../assets/img/bg_pages/bg_pages.png");
+    background-size: cover;
 
     /* Center the App Container*/
     /*display: flex;
@@ -28,16 +30,20 @@ img { max-width: 100%; }
     width: 100%;
 }
 
+router-link {
+    opacity: 0;
+}
+
 .container .btn-continue {
     width: 80px;
     height: 80px;
     float: right;
-    background-image: url("../../assets/img/bg_pages/next_row.png");
-    padding: 5px;
-    border-radius: 50%;
-    background-color: #1a428a;
+    background-image: url("../../assets/img/bg_pages/next_arrow.png");
+    padding: 0px;
+    border-radius: 20%;
     background-size: cover;
-    border: #1a428a;
+    border: #90ff34;
+    background-color: transparent;
     position: absolute;
     top: 50%;
     left: 93%;
@@ -49,12 +55,12 @@ img { max-width: 100%; }
     width: 80px;
     height: 80px;
     float: right;
-    background-image: url("../../assets/img/bg_pages/back_row.png");
+    background-image: url("../../assets/img/bg_pages/back_arrow.png");
     padding: 5px;
-    border-radius: 50%;
-    background-color: #1a428a;
+    border-radius: 20%;
+    background-color: transparent;
     background-size: cover;
-    border: #1a428a;
+    border: #90ff34;
     position: absolute;
     top: 50%;
     left: 7%;
