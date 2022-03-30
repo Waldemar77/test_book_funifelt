@@ -199,7 +199,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  background-image: url("../../assets/img/bg_pages/bg_pages.png");
+  background-image: url("../../assets/img/common/bg_pages.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

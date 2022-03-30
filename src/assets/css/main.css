@@ -13,7 +13,7 @@ body {
     font-weight: normal;
     font-size: 18px;
     color: #2c3e50;
-    background-image: url("../../assets/img/bg_pages/bg_pages.png");
+    background-image: url("../../assets/img/common/bg_pages.png");
     background-size: cover;
 
     /* Center the App Container*/
@@ -38,7 +38,7 @@ router-link {
     width: 80px;
     height: 80px;
     float: right;
-    background-image: url("../../assets/img/bg_pages/next_arrow.png");
+    background-image: url("../../assets/img/common/next_arrow.png");
     padding: 0px;
     border-radius: 20%;
     background-size: cover;
@@ -55,7 +55,7 @@ router-link {
     width: 80px;
     height: 80px;
     float: right;
-    background-image: url("../../assets/img/bg_pages/back_arrow.png");
+    background-image: url("../../assets/img/common/back_arrow.png");
     padding: 5px;
     border-radius: 20%;
     background-color: transparent;
