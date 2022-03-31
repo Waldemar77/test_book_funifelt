@@ -1,15 +1,15 @@
 <template>
   <body>
-    <div id="container-pg9" class="container">
+    <div id="container-pg11" class="container">
       <!--
       <router-link to="/lesson1_6">
         <button type="button" class="btn-continue"></button>
       </router-link>-->
-      <router-link to="/lesson1_4">
+      <router-link to="/lesson1_5">
         <button type="button" class="btn-return"></button>
       </router-link>
-      <router-link to="/lesson1_g1">
-        <button type="button" id="btn-game">¡A JUGAR!</button>
+      <router-link to="/lesson1_g2">
+        <button type="button" id="btn-game">¡A DIBUJAR!</button>
       </router-link>
     </div>
   </body>
@@ -17,14 +17,14 @@
 
 <script>
 export default {
-  name: "Lesson1_5_app",
+  name: "Lesson1_6_app",
 };
 </script>
 
 <style scoped>
-#container-pg9 {
+#container-pg11 {
   height: 100vh;
-  background-image: url("../../assets/img/bg_pages/09_Tomo 1 - JPEG.png");
+  background-image: url("../../assets/img/bg_pages/10_Tomo 1 - JPEG.png");
   /*background-color: #1a428a;*/
   background-size: contain;
   background-position: center center;

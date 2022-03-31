@@ -39,7 +39,7 @@ router-link {
     height: 80px;
     float: right;
     background-image: url("../../assets/img/common/next_arrow.png");
-    padding: 0px;
+    padding: 5px;
     border-radius: 20%;
     background-size: cover;
     border: #90ff34;

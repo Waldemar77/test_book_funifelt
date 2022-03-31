@@ -1,13 +1,14 @@
 <template>
   <body>
-    <div id="container-pg10" class="container">
-      <router-link to="/lesson1_6">
+    <div id="container-pg12" class="container">
+      <router-link to="/lesson1_7">
         <button type="button" class="btn-continue"></button>
       </router-link>
-      <router-link to="/lesson1_5">
+      <router-link to="/lesson1_6">
         <button type="button" class="btn-return"></button>
       </router-link>
     </div>
+    <!--
     <div id="frame-container">
       <iframe
         id="frame-puzzle"
@@ -20,17 +21,18 @@
         Desarrollado por <a href="https://im-a-puzzle.com/" target="_blank">"Im a puzzle".</a>     
       </p>
     </div>
+    -->
   </body>
 </template>
 
 <script>
 export default {
-  name: "Lesson1_g1_app",
+  name: "Lesson1_g2_app",
 };
 </script>
 
 <style scoped>
-#container-pg10 {
+#container-pg12 {
   height: 100vh;
   /*background-image: url("../../assets/img/bg_pages/09_Tomo 1 - JPEG.png");*/
   /*background-color: #1a428a;*/
@@ -40,6 +42,7 @@ export default {
   position: relative;
 }
 
+/*
 #frame-puzzle {
   border: 0;
   top: 0%;
@@ -66,5 +69,5 @@ export default {
     text-align: center;
     font-size: 15px;
     padding-bottom: 5px;
-}
+}*/
 </style>
