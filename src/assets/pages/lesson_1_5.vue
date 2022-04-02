@@ -9,8 +9,11 @@
         <button type="button" class="btn-return"></button>
       </router-link>
       <router-link to="/lesson1_g1">
-        <button type="button" id="btn-game">¡A JUGAR!</button>
+        <button type="button" class="btn-playG"></button>
       </router-link>
+      <div class="play-text-box">
+          <h1 class="play-text">¡A JUGAR!</h1>
+      </div>
     </div>
   </body>
 </template>
@@ -30,22 +33,5 @@ export default {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.container #btn-game {
-    width: 180px;
-    height: 180px;
-    float: right;
-    /*background-image: url("../../assets/img/common/next_arrow.png");*/
-    padding: 0px;
-    border-radius: 20%;
-    background-size: cover;
-    border: #90ff34;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 </style>

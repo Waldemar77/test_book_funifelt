@@ -68,6 +68,34 @@ router-link {
     -ms-transform: translate(-50%, -50%);
 }
 
+.container .btn-playG {
+    width: 400px;
+    height: 365px;
+    background-image: url("../../assets/img/common/button_play.png");
+    padding: 0px;
+    /*border-radius: 20%;*/
+    background-color: transparent;
+    background-size: cover;
+    border: #fff;
+    position: fixed;
+    top: 65%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container .play-text-box{
+    width: 270px;
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.container .play-text{
+    font-size: 40px;
+}
+
 button, 
 .pointer {
     cursor: pointer;
