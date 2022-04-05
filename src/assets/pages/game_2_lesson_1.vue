@@ -15,11 +15,11 @@
         Ancho de Línea:
         <input
           type="range"
-          v-bind="selected"
-          @change="set_line(selected)"
           max="150"
           min="1"
-          value="1"
+          step="1"
+          v-model="value"
+          @change="set_line(value)"
         /><span id="line_width">1</span>
         <input type="button" value="clean" @click="clean_board" />
       </section>
@@ -49,7 +49,7 @@ export default {
     this.vueCanvas = contexto;
     this.canvasG = canvas;
 
-    this.vueCanvas.lineWidth = 2;
+    this.vueCanvas.lineWidth = 1;
 
     canvas.addEventListener("mousemove", this.drawing);
 
