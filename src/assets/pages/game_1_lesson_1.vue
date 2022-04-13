@@ -8,6 +8,8 @@
         <button type="button" class="btn-return"></button>
       </router-link>
     </div>
+
+    <!-- This div contains the embebed puzzle game from im-a-puzzle.com -->
     <div id="frame-container">
       <iframe
         id="frame-puzzle"
@@ -15,6 +17,8 @@
         src="https://im-a-puzzle.com/share/cd2ab8be63c7094.png?embed=true&showAds=false&showNav=false&showSolve=false"
       ></iframe>
     </div>
+
+    <!-- This is the credit for im-a-puzzle.com -->
     <div id="puzzle-credits">
       <p>
         Desarrollado por <a href="https://im-a-puzzle.com/" target="_blank">"Im a puzzle".</a>     
