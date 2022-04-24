@@ -14,6 +14,8 @@ import Lesson_1_5 from "@/assets/pages/lesson_1_5"
 import Lesson_1_g1 from "@/assets/pages/game_1_lesson_1"
 import Lesson_1_6 from "@/assets/pages/lesson_1_6"
 import Lesson_1_g2 from "@/assets/pages/game_2_lesson_1"
+import Lesson_1_7 from "@/assets/pages/lesson_1_7"
+import Lesson_1_g3 from "@/assets/pages/game_3_lesson_1"
 import firebase from 'firebase';
 
 import { createRouter, createWebHashHistory } from 'vue-router'
@@ -32,7 +34,9 @@ const routes = [
     { path: '/lesson1_5', name: "Lesson1_5_app", component: Lesson_1_5, props: true, meta: { requireAuth: true } },
     { path: '/lesson1_g1', name: "Lesson1_g1_app", component: Lesson_1_g1, props: true, meta: { requireAuth: true } },
     { path: '/lesson1_6', name: "Lesson1_6_app", component: Lesson_1_6, props: true, meta: { requireAuth: true } },
-    { path: '/lesson1_g2', name: "Lesson1_g2_app", component: Lesson_1_g2, props: true, meta: { requireAuth: true } }
+    { path: '/lesson1_g2', name: "Lesson1_g2_app", component: Lesson_1_g2, props: true, meta: { requireAuth: true } },
+    { path: '/lesson1_7', name: "Lesson1_7_app", component: Lesson_1_7, props: true, meta: { requireAuth: true } },
+    { path: '/lesson1_g3', name: "Lesson1_g3_app", component: Lesson_1_g3, props: true, meta: { requireAuth: true } },
 ];
 
 const router = createRouter({
